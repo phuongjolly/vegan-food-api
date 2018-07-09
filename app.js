@@ -61,10 +61,7 @@ app.get('/api/collections/:id', async (req, res, next) => {
 
 app.post('/api/collections', async(req, res, next) => {
   try{
-    console.log(req.body);
     const name = req.body.name;
-    console.log('body name');
-    console.log(name);
     const result = await db.addReviewsCollection({name});
     console.log(result);
     res.send(200, result);
@@ -77,9 +74,14 @@ app.post('/api/collections', async(req, res, next) => {
 app.post('/api/reviews/update', async(req, res, next) => {
   try{
     const { review, collection } = req.body;
-    const newCollection = await db.addReviewsCollection({name: collection.name});
-    const result = await db.addCollectionToReview(review, newCollection);
-    res.send(200, result);
+    if(collection.name !== '') {
+      const newCollection = await db.addReviewsCollection({name: collection.name});
+      const result = await db.addCollectionToReview(review, newCollection);
+      res.send(200, result);
+    } else{
+      res.send(500, 'error' + e);
+    }
+
   }catch (e) {
     res.send(500, 'error' + e);
   }

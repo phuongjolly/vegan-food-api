@@ -128,6 +128,78 @@ const reviews = [
       avatar: 'https://semantic-ui.com/images/avatar/small/joe.jpg',
     },
   },
+  {
+    name: 'abffff',
+    title: 'Nicoise salad',
+    dish: {
+      id: 3,
+      name: 'Salad',
+      type: 'Vegan',
+      restaurant: 'The Butcher’s Son, Downtown Berkeley, Berkeley, California, United States',
+    },
+    image: 'https://minimalistbaker.com/wp-content/uploads/2016/06/30-minute-EASY-Vegan-Nicoise-Salad-with-Shallot-and-Dijon-Vinaigrette-Quick-satisfying-HEALTHY-vegan-glutenfree-plantbased-recipe.jpg',
+    content: 'Kimchi is the center of attention in many Korean foods. The kimchi mentioned at the beginning of this article is actually truer to the original ',
+    rate: 5,
+    user: {
+      id: 3,
+      name: 'John',
+      avatar: 'https://semantic-ui.com/images/avatar/small/joe.jpg',
+    },
+  },
+  {
+    name: 'bfffff',
+    title: 'Polpette',
+    dish: {
+      id: 3,
+      name: 'Salad',
+      type: 'Vegan',
+      restaurant: 'The Butcher’s Son, Downtown Berkeley, Berkeley, California, United States',
+    },
+    image: 'https://144f2a3a2f948f23fc61-ca525f0a2beaec3e91ca498facd51f15.ssl.cf3.rackcdn.com/uploads/food_portal_data/recipes/recipe/hero_article_image/2594/compressed_Polpette_1-593.jpg',
+    content: 'Kimchi is the center of attention in many Korean foods. The kimchi mentioned at the beginning of this article is actually truer to the original ',
+    rate: 5,
+    user: {
+      id: 3,
+      name: 'John',
+      avatar: 'https://semantic-ui.com/images/avatar/small/joe.jpg',
+    },
+  },
+  {
+    name: 'cfff',
+    title: 'Happy meal',
+    dish: {
+      id: 3,
+      name: 'Salad',
+      type: 'Vegan',
+      restaurant: 'The Butcher’s Son, Downtown Berkeley, Berkeley, California, United States',
+    },
+    image: 'https://i0.wp.com/twohappyrabbits.com/wp/wp-content/uploads/2017/10/Day-23cC.jpg?resize=1080%2C718',
+    content: 'Kimchi is the center of attention in many Korean foods. The kimchi mentioned at the beginning of this article is actually truer to the original ',
+    rate: 5,
+    user: {
+      id: 3,
+      name: 'John',
+      avatar: 'https://semantic-ui.com/images/avatar/small/joe.jpg',
+    },
+  },
+  {
+    name: 'dfff',
+    title: 'Mushroom pizza',
+    dish: {
+      id: 3,
+      name: 'Salad',
+      type: 'Vegan',
+      restaurant: 'The Butcher’s Son, Downtown Berkeley, Berkeley, California, United States',
+    },
+    image: 'https://livekindlyproduction-8u6efaq1lwo6x9a.stackpathdns.com/wp-content/uploads/2017/12/vegan-pizza-1280x640.png',
+    content: 'Kimchi is the center of attention in many Korean foods. The kimchi mentioned at the beginning of this article is actually truer to the original ',
+    rate: 5,
+    user: {
+      id: 3,
+      name: 'John',
+      avatar: 'https://semantic-ui.com/images/avatar/small/joe.jpg',
+    },
+  },
 ];
 
 const reviewsCollection = [

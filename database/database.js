@@ -84,8 +84,8 @@ async function addReviewsCollection(collection) {
   const reviewsCollection = await getCollection(REVIEWS_COLLECTION);
   let result = await reviewsCollection.findOne({name: collection.name});
   if (result == null) {
-    console.log('did you come here');
     result = await reviewsCollection.insertOne(collection);
+    result = result.ops[0];
   }
   return result;
 }
